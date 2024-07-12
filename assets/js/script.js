@@ -11,6 +11,8 @@ emailBtn.addEventListener('click', (event) => {
     const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     if(!email){
         emailMessageWrong.textContent = `Please enter email!`
+        emailMessageWrong.classList.remove('text-lime-600')
+        emailMessageWrong.classList.add('text-SoftRed')
         inputEmail.classList.remove('border-DesaturatedRed')
         inputEmail.classList.add('border-SoftRed')
         iconWrong.classList.remove('hidden')

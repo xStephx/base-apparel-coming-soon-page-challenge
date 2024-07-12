@@ -20,7 +20,7 @@
 <body class="bg-primary-gradient font-JosefinSans flex items-center justify-center h-screen">
   <!-- Content Section -->
   <section class="flex flex-col h-screen w-full md:w-3/5 bg-[url('assets/images/bg-pattern-desktop.svg')] bg-no-repeat bg-no-repeat bg-cover bg-center">
-    <div class="max-w-[700px] mx-auto md:text-left text-center">
+    <div class="max-w-[650px] mx-auto md:text-left text-center">
       <!-- Logo -->
       <div class="md:py-16 md:px-14 px-7 pt-8 pb-8">
         <img src="assets/images/logo.svg" alt="Logo">
@@ -40,15 +40,21 @@
       </p>
       <!-- Email Form -->
       <form class="relative text-left md:px-14 px-7 pb-10">
-        <input id="input-email" type="text" placeholder="Email Address" class="py-3 pl-7 md:pr-48 pr-32 rounded-full border-DesaturatedRed focus:outline-none focus:border-DesaturatedRed border-[2px] placeholder-red-200">
-        <span id="icon-wrong" class="hidden absolute md:left-[350px] left-[270px] top-[13px]">
-          <img src="assets/images/icon-error.svg" alt="Error Icon">
-        </span>
-        <button id="email-btn" class="bg-secondary-gradient hover:opacity-95 px-7 py-4 rounded-full absolute md:left-[390px] left-[300px]">
-          <img src="assets/images/icon-arrow.svg" alt="Arrow Icon">
-        </button>
+        <div class="relative">
+          <!-- Input field -->
+          <input id="input-email" type="text" placeholder="Email Address" class="py-3 pl-7 md:pr-48 pr-32 rounded-full border-DesaturatedRed focus:outline-none focus:border-DesaturatedRed border-[1px] placeholder-red-200 w-full">
+          <!-- Error icon -->
+          <span id="icon-wrong" class="hidden absolute md:right-20 right-20 top-[13px]">
+            <img src="assets/images/icon-error.svg" alt="Error Icon">
+          </span>
+          <!-- Submit button -->
+          <button id="email-btn" type="submit" class="bg-secondary-gradient hover:opacity-95 px-7 py-4 rounded-full absolute md:right-0 right-0">
+            <img src="assets/images/icon-arrow.svg" alt="Arrow Icon">
+          </button>
+        </div>
+        <!-- Error message -->
         <p id="email-message-wrong" class="px-[30px] py-[10px] text-sm text-SoftRed"></p>
-      </form>
+      </form>      
     </div>
   </section>
   <!-- Hero Desktop Image Secton -->
