@@ -40,14 +40,14 @@
       </p>
       <!-- Email Form -->
       <form class="relative text-left md:px-14 px-7 pb-10">
-        <input type="text" placeholder="Email Address" class="py-3 pl-7 md:pr-48 pr-32 rounded-full border-DesaturatedRed border-[1px] placeholder-red-200">
-        <span class="hidden absolute md:left-[350px] left-[270px] top-[13px]">
+        <input id="input-email" type="text" placeholder="Email Address" class="py-3 pl-7 md:pr-48 pr-32 rounded-full border-DesaturatedRed focus:outline-none focus:border-DesaturatedRed border-[2px] placeholder-red-200">
+        <span id="icon-wrong" class="hidden absolute md:left-[350px] left-[270px] top-[13px]">
           <img src="assets/images/icon-error.svg" alt="Error Icon">
         </span>
-        <button class="bg-secondary-gradient hover:opacity-95 px-7 py-4 rounded-full absolute md:left-[390px] left-[300px]">
+        <button id="email-btn" class="bg-secondary-gradient hover:opacity-95 px-7 py-4 rounded-full absolute md:left-[390px] left-[300px]">
           <img src="assets/images/icon-arrow.svg" alt="Arrow Icon">
         </button>
-        <p class="px-[30px] py-[10px] text-sm text-SoftRed"></p>
+        <p id="email-message-wrong" class="px-[30px] py-[10px] text-sm text-SoftRed"></p>
       </form>
     </div>
   </section>
