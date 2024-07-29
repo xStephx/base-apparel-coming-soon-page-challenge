@@ -19,12 +19,12 @@
 </head>
 <body class="bg-primary-gradient font-JosefinSans flex items-center justify-center h-screen">
   <!-- Content Section -->
-  <section class="flex flex-col h-screen w-full md:w-3/5 bg-[url('assets/images/bg-pattern-desktop.svg')] bg-no-repeat bg-no-repeat bg-cover bg-center">
+  <main class="flex flex-col h-screen w-full md:w-3/5 bg-[url('assets/images/bg-pattern-desktop.svg')] bg-no-repeat bg-no-repeat bg-cover bg-center">
     <div class="max-w-[650px] mx-auto md:text-left text-center">
       <!-- Logo -->
-      <div class="md:py-16 md:px-14 px-7 pt-8 pb-8">
+      <header class="md:py-16 md:px-14 px-7 pt-8 pb-8">
         <img src="assets/images/logo.svg" alt="Logo">
-      </div>
+      </header>
       <!-- Mobile Hero -->
       <div class="md:hidden px-0">
         <img src="assets/images/hero-mobile.jpg" alt="Mobile Hero" class="w-full">
@@ -42,7 +42,7 @@
       <form class="relative text-left md:px-14 px-7 pb-10">
         <div class="relative">
           <!-- Input field -->
-          <input id="input-email" type="text" placeholder="Email Address" class="py-3 pl-7 md:pr-48 pr-32 rounded-full border-DesaturatedRed focus:outline-none focus:border-DesaturatedRed border-[1px] placeholder-red-200 w-full">
+          <input id="input-email" type="text" placeholder="Email Address" class="py-3 pl-7 md:pr-24 pr-7 rounded-full border-DesaturatedRed focus:outline-none focus:border-DesaturatedRed border-[1px] placeholder-red-200 w-full">
           <!-- Error icon -->
           <span id="icon-wrong" class="hidden absolute md:right-20 right-20 top-[13px]">
             <img src="assets/images/icon-error.svg" alt="Error Icon">
@@ -56,10 +56,11 @@
         <p id="email-message-wrong" class="px-[30px] py-[10px] text-sm text-SoftRed"></p>
       </form>      
     </div>
-  </section>
+  </main>
   <!-- Hero Desktop Image Secton -->
   <section class="hidden sm:block h-screen md:w-2/5 bg-[url('assets/images/hero-desktop.jpg')] bg-no-repeat bg-no-repeat bg-cover bg-center">
   </section>
+  <!-- Custom JS -->
   <script src="assets/js/script.js"></script>
 </body>
 
